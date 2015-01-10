@@ -1,0 +1,125 @@
+html {
+  background: #08f;
+  font: 16px "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+a {
+  color: #f80;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #e70;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 72px;
+  font-family: Bitter, Cambria, Georgia, serif;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: Bitter, Cambria, Georgia, serif;
+  font-weight: 900;
+}
+
+h2 img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.description {
+  font-size: 36px;
+  color: #ccc;
+}
+
+.logo {
+  width: 256px;
+  height: 256px;
+  margin: 0 auto;
+  background: url('img/logo.png');
+}
+
+input {
+  margin-bottom: 8px;
+  display: block;
+  width: 50%;
+}
+
+button {
+  width: 25%;
+}
+
+input, button {
+  font: 16px Magra, sans-serif;
+  height: 32px;
+  padding: 0 8px;
+  border: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  margin-top: 48px;
+  padding: 16px 0;
+  border-top: 1px solid #fff;
+}
+
+/* I wish. */
+.pixelated {
+  image-rendering:optimizeSpeed;             /* Legal fallback */
+  image-rendering:-moz-crisp-edges;          /* Firefox        */
+  image-rendering:-o-crisp-edges;            /* Opera          */
+  image-rendering:-webkit-optimize-contrast; /* Safari         */
+  image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+  image-rendering:crisp-edges;               /* CSS4 Proposed  */
+  image-rendering:pixelated;                 /* CSS4 Proposed  */
+  -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+}
+
+@media (max-width: 1024px) {
+  body {
+    width: 720px;
+  }
+
+  .description {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  h2 img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
